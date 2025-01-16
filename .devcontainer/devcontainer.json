@@ -1,0 +1,13 @@
+{
+  "name": "geeta_container",
+  "dockerComposeFile": [],
+  "service": "geeta_container",
+  "workspaceFolder": "/home/geeta",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter"
+  ]
+}

@@ -1,0 +1,20 @@
+nohup: ignoring input
+Transcribing 245.wav...
+Traceback (most recent call last):
+  File "/geeta/SentAnPod/source_files/waveToText_Whisper.py", line 95, in <module>
+    transcribe_all_files(input_folder, output_folder)
+  File "/geeta/SentAnPod/source_files/waveToText_Whisper.py", line 76, in transcribe_all_files
+    transcription = transcribe_audio_in_segments(file_path)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/geeta/SentAnPod/source_files/waveToText_Whisper.py", line 53, in transcribe_audio_in_segments
+    segments = segment_audio(file_path, segment_length)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/geeta/SentAnPod/source_files/waveToText_Whisper.py", line 12, in segment_audio
+    waveform, sample_rate = torchaudio.load(file_path)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/ML-python312/lib/python3.12/site-packages/torchaudio/_backend/utils.py", line 204, in load
+    backend = dispatcher(uri, format, backend)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/ML-python312/lib/python3.12/site-packages/torchaudio/_backend/utils.py", line 116, in dispatcher
+    raise RuntimeError(f"Couldn't find appropriate backend to handle uri {uri} and format {format}.")
+RuntimeError: Couldn't find appropriate backend to handle uri /geeta/SentAnPod/podcasts/Pomp_Podcast/waveFiles/245.wav and format None.
